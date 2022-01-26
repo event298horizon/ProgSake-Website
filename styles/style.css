@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(70, 69, 69, 0.788);
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+.header {
+    height: 8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+
+.siteName {
+    background: rgba(41, 41, 41, 0.836);
+    color: rgba(245, 245, 245, 0.76);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: source code pro;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.siteName::before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 400px;
+    border: 1px solid;
+    filter: blur(30px);
+}
+
+.siteName h1 {
+    z-index: 5;
+}
+
+.siteName p {
+    font-size: 16px;
+    z-index: 5;
+}
+
+
+
+#myInput {
+    height: 2rem;
+    width: 30rem;
+    margin: 75px 10px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: rgba(68, 68, 68, 0.822);
+    color: rgba(255, 255, 255, 0.836);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 48%;
+}
+
+#myInput::placeholder {
+    color: rgba(245, 245, 245, 0.651);
+    letter-spacing: 1.3px;
+}
+
+.container {
+    height: 30rem;
+    width: 80%;
+    margin: auto;
+    padding-left: 3rem;
+    margin-bottom: 2.5rem;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 14.2rem);
+    grid-gap: 3.3rem 2.5rem;
+    background: transparent;
+}
+
+
+.card {
+    background: rgb(92, 92, 92);
+    border-radius: 21px;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(0.97);
+    transition-duration: 0.16s;
+    transition-timing-function: ease;
+}
+
+.card::before {
+    content: '';
+    height: 20rem;
+    width: 15rem;
+    background: inherit;
+    position: absolute;
+    border: solid 2px;
+    box-shadow: inset 1px 1px 1px 200px rgba(0, 0, 0, 0.651);
+    filter: blur(10px);
+}
+
+.logo {
+    height: 180px;
+    width: 180px;
+    z-index: 5;
+    border-radius: 50%;
+    pointer-events: none;
+    display: grid;
+    place-items: center;
+}
+
+.img {
+    height: 150px;
+}
+
+.label {
+    display: grid;
+    place-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 28px;
+    pointer-events: none;
+    z-index: 4;
+}
+
+
+.footer {
+    height: 4rem;
+    background-color: rgba(43, 42, 42, 0.788);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.footer p span {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 31.5%;
+    top: 93.3%;
+}
+
+#copy {
+    height: 20px;
+}
+
+/* STYLING CARD.HTML */
+
+#header {
+    background: rgba(34, 34, 34, 0.808);
+    color: rgba(255, 255, 255, 0.801);
+    padding: 30px 0 0 30px;
+}
+
+.newContainer {
+    background: rgba(34, 34, 34, 0.808);
+    padding: 2rem;
+    height: 30rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: monospace;
+    font-size: 20px;
+    color: rgba(235, 230, 230, 0.849);
+}
+
+#developer,
+#year {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+#desc {
+    line-height: 30px;
+    margin-top: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+#btn {
+    border: none;
+    height: 30px;
+    width: 80px;
+    background: rgba(255, 253, 253, 0.767);
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
+#btn:hover {
+    background: rgba(109, 99, 99, 0.767);
+    color: white;
+    font-weight: normal;
+    transition: 0.2s all ease;
+}
