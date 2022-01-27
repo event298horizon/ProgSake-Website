@@ -58,7 +58,11 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-
+.siteName:hover {
+    transform: scale(0.98);
+    transition-duration: 0.16s;
+    transition-timing-function: ease;
+}
 .siteName::before {
     content: '';
     background: inherit;
@@ -136,6 +140,13 @@ body {
     transition-duration: 0.16s;
     transition-timing-function: ease;
 }
+.card:hover .logo {
+    animation-name: spin;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-duration: .7s;
+}
 
 .card::before {
     content: '';
@@ -189,12 +200,51 @@ body {
     height: 20px;
 }
 
+@keyframes spin {
+    0% {
+      /* transform: rotateZ(0deg); */
+      transform: scale(1)
+    }
+  
+    25% {
+      /* transform: rotateZ(90deg); */
+      transform: scale(0.9);
+    }
+  
+    50% {
+      /* transform: rotateZ(180deg); */
+      transform: scale(0.8);
+    }
+  
+    75% {
+      /* transform: rotateZ(270deg); */
+      transform: scale(0.9);
+    }
+  
+    100% {
+      /* transform: rotateZ(360deg); */
+      transform: scale(1);
+    }
+  }
+
+
 /* STYLING CARD.HTML */
 
 #header {
     background: rgba(34, 34, 34, 0.808);
     color: rgba(255, 255, 255, 0.801);
     padding: 30px 0 0 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#cardLogo {
+    margin-top: -15px;
+    margin-right: 20px;
+    margin-left: -10px;
+    /* border: 1px solid; */
+    height: 100%;
+
 }
 
 .newContainer {
