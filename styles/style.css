@@ -202,14 +202,14 @@ body {
     color: rgba(255, 255, 255, 0.801);
     padding: 30px 0 0 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #cardLogo {
     margin-top: -15px;
     margin-right: 20px;
     margin-left: -10px;
-    /* border: 1px solid; */
+    border: 1px solid;
     height: 100%;
 
 }
