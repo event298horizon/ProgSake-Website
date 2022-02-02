@@ -73,3 +73,11 @@ container.addEventListener('click', (e) => {
 
   }
 })
+
+const hiddenButton = document.querySelector('.displayNoneButton');
+const wave = document.querySelector('.wave');
+
+hiddenButton.addEventListener('click' , () => {
+  wave.style = 'animation-name: window';
+
+})
