@@ -48,10 +48,10 @@ body {
     flex-direction: column;
     margin-left: 10px;
     margin-top: 10px;
-    font-family: source code pro;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-right: 10px;
+    /* font-family: source code pro; */
+    font-family: monospace;
+    font-style: italic;
+    padding: 0 10px 5px 10px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -79,10 +79,12 @@ body {
 
 .siteName h1 {
     z-index: 5;
+    letter-spacing: .2vw;
+
 }
 
 .siteName p {
-    font-size: 16px;
+    font-size: 18px;
     z-index: 5;
 }
 
@@ -127,7 +129,7 @@ body {
 .card {
     background: rgb(92, 92, 92);
     border-radius: 21px;
-    height: 18rem;
+    height: 19vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -136,17 +138,10 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-.card:hover {
-    transform: scale(0.97);
-    transition-duration: 0.16s;
-    transition-timing-function: ease;
-}
-
 .card::before {
     content: '';
-    height: 20rem;
-    width: 15rem;
+    height: 20vw;
+    width: 15vw;
     background: inherit;
     position: absolute;
     border: solid 2px;
@@ -154,9 +149,16 @@ body {
     filter: blur(10px);
 }
 
+.card:hover {
+    transform: scale(0.95);
+    transition-duration: 0.16s;
+    transition-timing-function: ease-in-out;
+}
+
+
 .logo {
-    height: 180px;
-    width: 180px;
+    height: 10vw;
+    width: 10vw;
     z-index: 5;
     border-radius: 50%;
     pointer-events: none;
@@ -165,7 +167,8 @@ body {
 }
 
 .img {
-    height: 150px;
+    height: 10vw;
+    border-radius: 50%;
 }
 
 .label {
@@ -173,7 +176,7 @@ body {
     place-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(255, 255, 255, 0.836);
-    font-size: 28px;
+    font-size: 2vw;
     pointer-events: none;
     z-index: 4;
 }
